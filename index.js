@@ -1,5 +1,5 @@
 require('dotenv').config()
-
+// https://platform.openai.com/docs/api-reference/completions?lang=node.js
 const { Configuration, OpenAIApi } = require("openai");
 const configuration = new Configuration({
     apiKey: process.env.OPENAI_KEY,
