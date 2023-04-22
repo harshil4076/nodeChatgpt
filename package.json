@@ -1,6 +1,15 @@
 {
+  "type": "module",
   "dependencies": {
+    "@huggingface/inference": "^1.8.0",
+    "csv-parser": "^3.0.0",
+    "csv-writer": "^1.6.0",
     "dotenv": "^16.0.3",
-    "openai": "^3.2.1"
+    "gpt4all": "^1.0.0",
+    "hnswlib-node": "^1.4.2",
+    "langchain": "^0.0.59",
+    "node-fetch": "^3.3.1",
+    "openai": "^3.2.1",
+    "pdf-parse": "^1.1.1"
   }
 }
