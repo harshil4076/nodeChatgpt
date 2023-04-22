@@ -1,6 +1,7 @@
-require('dotenv').config()
+import dotenv from 'dotenv'
 // https://platform.openai.com/docs/api-reference/completions?lang=node.js
-const { Configuration, OpenAIApi } = require("openai");
+import { Configuration, OpenAIApi } from "openai";
+dotenv.config()
 const configuration = new Configuration({
     apiKey: process.env.OPENAI_KEY,
     //generate KEY from openAI account
@@ -10,7 +11,7 @@ const openai = new OpenAIApi(configuration);
 
 //This is based on code-davinci from openai.
 //If you pass in some code it gives suggestions, fixes or optimizations
-//Ex. Run node codebud.js "convert to arrow function function codebud(code){{}" 
+//Ex. Run node codebud.js "convert to arrow function function codebud(code){{}"
 async function chatText (input){
     try {
         const response = await openai.createCompletion({
